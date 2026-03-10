@@ -1,0 +1,14 @@
+P{
+    color: rgb(45, 155, 118);
+    font-family: cursive;
+    font-size: large;
+}
+
+.intro{
+    font-size: 20px;
+}
+
+#headline{
+    color:chartreuse;
+    border-color: antiquewhite;
+}
