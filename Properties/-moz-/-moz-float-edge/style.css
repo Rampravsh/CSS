@@ -1,0 +1,9 @@
+.box {
+  display: block;
+  background-color: aqua;
+  /* height: 5px; */
+  margin: 0.5em auto;
+  color: gray;
+  -moz-float-edge: border-box;
+  box-sizing: border-box;
+}
