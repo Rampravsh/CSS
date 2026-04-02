@@ -8,18 +8,17 @@
       #container {
         background-color: cadetblue;
         height: 600px;
-        width: calc(100vw-);
+        width: calc(100vw - 20px);
         padding: 10px;
         border: 2px solid black;
         border-radius: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px;
       }
       .box {
-        height: 100px;
-        width: 100px;
+        /* height: 100px;
+        width: 100px; */
         border: 2px solid black;
         background-color: blueviolet;
         margin: 10px;
@@ -28,10 +27,14 @@
         padding: 10px;
         color: aliceblue;
       }
-      #box3 {
-        align-self: end;
-        
+      /* #box1 {
       }
+      #box2 {
+      }
+      #box3 {
+      }
+      #box4 {
+      } */
     </style>
   </head>
   <body>
