@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #005A9C;
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* position: static */
+.static {
+    background-color: #d9534f;
+    /* No position property, it's static by default */
+}
+
+/* position: relative */
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #f0ad4e;
+}
+
+/* position: absolute */
+#absolute-container {
+     position: relative; /*This is the positioned ancestor */
+    height: 250px;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #5cb85c;
+}
+
+/* position: fixed */
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0275d8;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* position: sticky */
+.sticky {
+     position: -webkit-sticky; /*For Safari */
+    position: sticky;
+    top: 0;
+    background-color: #5bc0de;
+}

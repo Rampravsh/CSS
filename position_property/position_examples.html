@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Properties</title>
+    <link rel="stylesheet" href="position_styles.css">
+</head>
+<body>
+
+    <h1>CSS Position Property Examples</h1>
+
+    <div class="container">
+        <h2>position: static;</h2>
+        <div class="box static">Static</div>
+        <p>This is the default position. The element is not positioned in any special way; it is always positioned according to the normal flow of the page.</p>
+    </div>
+
+    <div class="container">
+        <h2>position: relative;</h2>
+        <div class="box relative">Relative</div>
+        <p>This element is positioned relative to its normal position. With the properties <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>, the element is moved from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+    </div>
+
+    <div class="container" id="absolute-container">
+        <h2>position: absolute;</h2>
+        <p>This element is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</p>
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="container">
+        <h2>position: fixed;</h2>
+        <div class="box fixed">Fixed</div>
+        <p>This element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties are used.</p>
+    </div>
+
+    <div class="container">
+        <h2>position: sticky;</h2>
+        <p>A sticky element toggles between <code>relative</code> and <code>fixed</code>, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+        <div class="box sticky">Sticky</div>
+    </div>
+    
+    <div style="height: 1000px;"></div>
+
+</body>
+</html>

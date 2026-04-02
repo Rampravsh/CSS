@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .page {
+        background-color: bisque;
+        height: 100vh;
+        border-bottom: 4px solid black;
+      }
+
+      .box {
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        border: 4px solid black;
+        border-radius: 10px;
+      }
+      #box1 {
+        position: static;
+      }
+      #box2 {
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      #box3 {
+        position: fixed;
+
+      }
+      #box4 {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div id="box1" class="box">static</div>
+      <div id="box2" class="box">relative</div>
+      <div id="box3" class="box">fixed</div>
+      <div id="box4" class="box">absolute</div>
+    </div>
+    <div class="page"></div>
+  </body>
+</html>
